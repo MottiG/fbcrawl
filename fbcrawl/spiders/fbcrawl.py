@@ -13,8 +13,8 @@ class FacebookSpider(scrapy.Spider):
     '''    
     name = 'fb'
     custom_settings = {
-        'FEED_EXPORT_FIELDS': ['source','shared_from','date','text', \
-                               'reactions','likes','ahah','love','wow', \
+        'FEED_EXPORT_FIELDS': ['source','shared_from','date','text',
+                               'reactions','likes','ahah','love', 'wow',
                                'sigh','grrr','comments','post_id','url'],
         'DUPEFILTER_CLASS' : 'scrapy.dupefilters.BaseDupeFilter',
     }
